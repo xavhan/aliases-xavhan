@@ -22,8 +22,8 @@ alias bubu="\
   brew update && \
   brew outdated && \
   brew upgrade && \
-  brew cask outdated | cut -f 1 | xargs brew cask reinstall \
-  brew cleanup && \
+  brew cask outdated | cut -f 1 | xargs brew cask reinstall &&\
+  brew cleanup\
   "
 alias bs="brew search"
 alias bcs="brew search" # brew cask search is deprecated
