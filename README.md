@@ -5,12 +5,8 @@ This repo is meant to work with oh-my-zsh as a custom plugin
 
 # Install 
 
-`mkdir -p $ZSH_CUSTOM/plugins/aliases-xavhan`
+`make`
 
-`wget -O $ZSH_CUSTOM/plugins/aliases-xavhan/aliases-xavhan.plugin.zsh https://raw.githubusercontent.com/xavhan/aliases-xavhan/master/aliases-xavhan.plugin.zsh`
-
-`vim ~/.zshrc`
-
-add  `aliases-xavhan` to your `plugins` collection
+then add `aliases-xavhan` to your `plugins` collection in your `vim ~/.zshrc`
 
 > plugins=(aliases-xavhan)
