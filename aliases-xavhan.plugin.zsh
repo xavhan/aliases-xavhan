@@ -28,7 +28,7 @@ alias bubu="\
 alias bs="brew search"
 alias bcs="brew search" # brew cask search is deprecated
 alias bi="brew install"
-alias bci="brew cask install"
+alias bci="brew install --cask"
 
 alias cat="bat"
 alias ping="prettyping"
