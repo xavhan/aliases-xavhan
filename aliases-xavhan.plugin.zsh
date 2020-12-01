@@ -20,22 +20,15 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # brew
 alias bubu="\
   brew update && \
-  brew outdated && \
+  brew outdated -v && \
   brew upgrade && \
-  brew cask outdated | cut -f 1 | xargs brew cask reinstall &&\
-  brew cleanup\
+  brew cleanup --prune all -s\
   "
 alias bs="brew search"
 alias bcs="brew search" # brew cask search is deprecated
 alias bi="brew install"
-alias bci="brew install --cask"
+alias bci="brew install" # brew cask search is deprecated
 
 alias cat="bat"
 alias ping="prettyping"
 alias help="tldr"
-alias top="sudo htop" # alias top and fix high sierra bug
-
-
-# docker-compose
-alias doc="docker-compose"
-alias doclog="doc logs -f"
